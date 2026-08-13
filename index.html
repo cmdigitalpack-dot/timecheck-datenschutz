@@ -1,56 +1,154 @@
-# Datenschutzerklärung — TIME CHECK Pro
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — TIME CHECK Pro</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  h1 { font-size: 1.6rem; line-height: 1.3; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; margin-bottom: 0.5rem; }
+  .lang {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .lang a, .lang span {
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid #d5d5db;
+  }
+  .lang span { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+  .lang a { color: #444; }
+  .lang a:hover { background: #f0f0f3; }
+  .meta {
+    margin: 0 0 2rem;
+    padding: 0.9rem 1.1rem;
+    background: #f4f4f6;
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+  .meta div { margin: 0.15rem 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.4rem 0; }
+  a { color: #0b57d0; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    font-size: 0.875rem;
+    color: #666;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121216; }
+    .meta { background: #1e1e24; }
+    a { color: #8ab4f8; }
+    .lang a { color: #bbb; border-color: #3a3a44; }
+    .lang a:hover { background: #22222a; }
+    .lang span { background: #e6e6e6; color: #121216; border-color: #e6e6e6; }
+    footer { border-top-color: #333; color: #999; }
+  }
+</style>
+</head>
+<body>
 
-Gehostete Fassung: siehe `datenschutzerklaerung.html` (fertig zum Upload).
-Nach dem Hosten die öffentliche URL in der Play Console eintragen.
+<nav class="lang">
+  <span>Deutsch</span>
+  <a href="en.html" hreflang="en">English</a>
+</nav>
 
----
+<h1>Datenschutzerklärung</h1>
+<p>für die Android-App <strong>TIME CHECK Pro</strong></p>
 
-Datenschutzerklärung für TIME CHECK Pro
+<div class="meta">
+  <div><strong>Verantwortlich:</strong> CM Digital</div>
+  <div><strong>Kontakt:</strong> <a href="mailto:cm.digital.pack@gmail.com">cm.digital.pack@gmail.com</a></div>
+  <div><strong>Stand:</strong> 13. August 2026</div>
+</div>
 
-Verantwortlich: CM Digital
-Kontakt: cm.digital.pack@gmail.com
-Stand: 13. August 2026
+<h2>1. Überblick</h2>
+<p>
+  TIME CHECK Pro („die App“) erfasst Arbeitszeiten für Vorgänge. Diese
+  Zeiterfassungsdaten (Projekte, Vorgänge, Zeiten) werden ausschließlich lokal
+  auf dem Gerät des Nutzers gespeichert und nicht an uns oder Dritte übertragen.
+</p>
 
-1. Überblick
-TIME CHECK Pro ("die App") erfasst Arbeitszeiten für Vorgänge. Diese
-Zeiterfassungsdaten (Projekte, Vorgänge, Zeiten) werden ausschließlich
-lokal auf dem Gerät des Nutzers gespeichert und nicht an uns oder Dritte
-übertragen.
+<h2>2. Automatisch erhobene Daten</h2>
+<p>
+  Zur Verbesserung der Stabilität und zum Verständnis der Nutzung setzt die App
+  Google Firebase ein:
+</p>
+<ul>
+  <li>
+    <strong>Firebase Crashlytics:</strong> erfasst Absturz- und Fehlerberichte
+    (Gerätemodell, Betriebssystemversion, Absturzzeitpunkt, technischer Stacktrace).
+  </li>
+  <li>
+    <strong>Firebase Analytics:</strong> erfasst pseudonyme Nutzungsstatistiken
+    sowie eine Werbe-ID zur Analyse der App-Nutzung.
+  </li>
+</ul>
+<p>
+  Diese Daten werden an Google übertragen und dort verarbeitet. Sie enthalten
+  keine von der App erfassten Arbeitszeitdaten.
+</p>
 
-2. Automatisch erhobene Daten
-Zur Verbesserung der Stabilität und zum Verständnis der Nutzung setzt die
-App Google Firebase ein:
-- Firebase Crashlytics: erfasst Absturz- und Fehlerberichte
-  (Gerätemodell, Betriebssystemversion, Absturzzeitpunkt, technischer
-  Stacktrace).
-- Firebase Analytics: erfasst pseudonyme Nutzungsstatistiken sowie eine
-  Werbe-ID zur Analyse der App-Nutzung.
-Diese Daten werden an Google übertragen und dort verarbeitet. Sie
-enthalten keine von der App erfassten Arbeitszeitdaten.
+<h2>3. Berechtigungen</h2>
+<ul>
+  <li><strong>Benachrichtigungen:</strong> zur Anzeige des laufenden Timers.</li>
+  <li><strong>Vordergrunddienst:</strong> damit die Zeitmessung im Hintergrund weiterläuft.</li>
+  <li>
+    <strong>Kamera:</strong> ausschließlich zum Scannen von QR-Codes, um Vorgänge
+    auszuwählen. Die Auswertung erfolgt live auf dem Gerät. Es werden keine Fotos
+    oder Videos aufgenommen, gespeichert oder übertragen. Die Kamerafunktion ist
+    optional und kann in den Einstellungen deaktiviert werden.
+  </li>
+</ul>
+<p>
+  Es werden keine Berechtigungen für Standort, Kontakte oder Speicher-Medien
+  verwendet.
+</p>
 
-3. Berechtigungen
-- Benachrichtigungen: zur Anzeige des laufenden Timers.
-- Vordergrunddienst: damit die Zeitmessung im Hintergrund weiterläuft.
-- Kamera: ausschließlich zum Scannen von QR-Codes, um Vorgänge
-  auszuwählen. Die Auswertung erfolgt live auf dem Gerät. Es werden
-  keine Fotos oder Videos aufgenommen, gespeichert oder übertragen.
-  Die Kamerafunktion ist optional und kann in den Einstellungen
-  deaktiviert werden.
-Es werden keine Berechtigungen für Standort, Kontakte oder
-Speicher-Medien verwendet.
+<h2>4. Weitergabe</h2>
+<p>
+  Außer der Übertragung an Google (Firebase) findet keine Weitergabe an Dritte
+  statt. Die App verkauft keine Daten.
+</p>
 
-4. Weitergabe
-Außer der Übertragung an Google (Firebase) findet keine Weitergabe an
-Dritte statt. Die App verkauft keine Daten.
+<h2>5. Rechte der Nutzer</h2>
+<p>
+  Nutzer können lokal gespeicherte Daten jederzeit in der App löschen. Für
+  Auskunft oder Löschung der über Firebase erhobenen pseudonymen Daten wenden Sie
+  sich an die oben genannte Kontaktadresse.
+</p>
 
-5. Rechte der Nutzer
-Nutzer können lokal gespeicherte Daten jederzeit in der App löschen.
-Für Auskunft oder Löschung der über Firebase erhobenen pseudonymen
-Daten wenden Sie sich an die oben genannte Kontaktadresse.
+<h2>6. Google Firebase</h2>
+<p>
+  Die Verarbeitung durch Google richtet sich nach der Datenschutzerklärung von
+  Google: <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>
+</p>
 
-6. Google Firebase
-Die Verarbeitung durch Google richtet sich nach der Datenschutzerklärung
-von Google: https://policies.google.com/privacy
+<h2>7. Änderungen</h2>
+<p>
+  Diese Erklärung kann bei Änderungen der App angepasst werden.
+</p>
 
-7. Änderungen
-Diese Erklärung kann bei Änderungen der App angepasst werden.
+<footer>
+  TIME CHECK Pro · com.timecheck.pro
+</footer>
+
+</body>
+</html>
